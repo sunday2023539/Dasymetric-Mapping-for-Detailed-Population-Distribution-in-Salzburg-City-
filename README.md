@@ -84,9 +84,9 @@ Include socio-economic indicators or land-use refinement
 
 This project demonstrates how combining elevation data, building footprints, and dasymetric mapping techniques can significantly improve the spatial accuracy of population distribution. The resulting building-level map is valuable for urban planning, disaster management, environmental modeling, and broader spatial analysis. Although applied to Salzburg, the workflow is easily adaptable to other cities with similar data.
 
-![Dasymetric Population Density Map](images/map1.jpg)
+![Dasymetric Population Density Map](Images/Map1.jpg)
 
-![Dasymetric Population Density Map](images/map2.jpg)
+![Dasymetric Population Density Map](Images/Map2.jpg)
 
 
 
