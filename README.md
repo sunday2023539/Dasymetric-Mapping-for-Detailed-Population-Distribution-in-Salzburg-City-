@@ -10,9 +10,13 @@
 
 This project applies dasymetric mapping to redistribute Salzburg’s district-level population data into a high-resolution, building-level population map. Using a limiting variable method and combining building footprints, DSM–DEM-derived heights, and volume-based weighting, the study produces an accurate representation of where people actually live within the city.
 
+----
+
 **Objective**
 
 To generate a detailed, building-level population distribution map for Salzburg by refining coarse census data using spatial and physical building characteristics.
+
+----
 
 **Data Sources**
 
@@ -21,6 +25,8 @@ District population data – Stadt Salzburg municipal datasets
 Building footprints – OpenStreetMap (clipped to city boundary)
 
 DSM & DEM elevation models – data.gv.at (used to compute building heights)
+
+----
 
 **Methodology Overview**
 **1.Data Preparation**
@@ -31,6 +37,8 @@ Filtered residential buildings only
 
 Joined district population to district polygons
 
+----
+
 **2.Building Characteristics Extraction**
 
 Height = DSM − DEM (via Raster Calculator)
@@ -40,6 +48,8 @@ Area = footprint area (m²)
 Volume = area × height (proxy for residential capacity)
 
 Zonal Statistics used to extract building-level height values
+
+----
 
 **3.Population Redistribution**
 
@@ -53,6 +63,8 @@ realistic distribution based on building capacity
 
 preservation of original district population totals
 
+----
+
 **4. Validation**
 
 Summed building-level populations per district
@@ -61,6 +73,8 @@ Compared against official census values
 
 Results showed near-perfect consistency
 
+----
+
 **Output**
 
 Building-level population estimates
@@ -68,6 +82,8 @@ Building-level population estimates
 Building-level population density
 
 Citywide dasymetric population map (visualized in GIS)
+
+----
 
 **Key Contributions**
 
@@ -79,6 +95,8 @@ Produces actionable urban-scale population estimates
 
 Fully consistent with district census totals
 
+----
+
 **Future Improvements**
 
 Incorporate building usage and household-size data
@@ -86,6 +104,8 @@ Incorporate building usage and household-size data
 Use real occupancy datasets where available
 
 Include socio-economic indicators or land-use refinement
+
+----
 
 **Conclusion**
 
